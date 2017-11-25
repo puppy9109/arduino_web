@@ -5,8 +5,12 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $("#div1").load("http://172.20.10.4/u");
+        $.get("http://172.20.10.4/u", function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+            $("#div1").load(data);
+        });
     });
+    
 });
 </script>
 </head>
