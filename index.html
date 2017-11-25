@@ -5,9 +5,7 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.get("http:172.20.10.2/d", function(data){
-            alert(data);
-        });
+        $("#div1").load("http://172.20.10.4/u");
     });
 });
 </script>
